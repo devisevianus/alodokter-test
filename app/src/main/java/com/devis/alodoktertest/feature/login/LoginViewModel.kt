@@ -16,7 +16,7 @@ import kotlinx.coroutines.launch
 class LoginViewModel : ViewModel() {
 
     private val _mLoginResult = MutableLiveData<BaseViewState<UserMdl>>()
-    private val userEmail = "devisevianus7@gmail.com"
+    private val userEmail = "email.testing@email.com"
     private val userPassword = "password"
 
     private var isSuccessLogin = false
