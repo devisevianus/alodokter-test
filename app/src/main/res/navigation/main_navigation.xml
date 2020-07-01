@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.devis.alodoktertest.feature.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_to_detail"
+            app:destination="@id/detailActivity"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.devis.alodoktertest.feature.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
+
+        <action
+            android:id="@+id/action_profile_to_login"
+            app:destination="@id/loginActivity"
+            />
+
+    </fragment>
+
+    <activity
+        android:id="@+id/detailActivity"
+        android:name="com.devis.alodoktertest.feature.detail.DetailActivity"
+        android:label="activity_detail"
+        tools:layout="@layout/activity_detail">
+
+        <argument
+            android:name="data"
+            app:argType="com.devis.alodoktertest.core.model.CatMdl"
+            app:nullable="true"
+            android:defaultValue="@null"
+            />
+
+    </activity>
+
+    <activity android:id="@+id/loginActivity"
+        android:name="com.devis.alodoktertest.feature.login.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login"
+        />
+
+</navigation>

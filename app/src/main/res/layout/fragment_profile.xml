@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGhostWhite"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp150"
+        android:layout_marginBottom="@dimen/dp16"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+
+        <!-- Image User Avatar -->
+        <ImageView
+            android:id="@+id/iv_user_avatar"
+            android:layout_width="@dimen/dp75"
+            android:layout_height="@dimen/dp75"
+            tools:background="@color/colorWhite"
+            tools:ignore="ContentDescription"
+            />
+
+    </LinearLayout>
+
+    <!-- Layout Name -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp1"
+        android:paddingStart="@dimen/dp16"
+        android:paddingEnd="@dimen/dp16"
+        android:paddingTop="@dimen/dp12"
+        android:paddingBottom="@dimen/dp12"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/iv_icon_name"
+            android:layout_marginEnd="@dimen/dp24"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/colorBlack_87"
+            tools:text="Devis Evianus"
+            />
+
+        <ImageView
+            android:id="@+id/iv_icon_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/ic_user"
+            tools:ignore="ContentDescription"
+            />
+
+    </RelativeLayout>
+
+    <!-- Layout Email -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp1"
+        android:paddingStart="@dimen/dp16"
+        android:paddingEnd="@dimen/dp16"
+        android:paddingTop="@dimen/dp12"
+        android:paddingBottom="@dimen/dp12"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/tv_user_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/iv_icon_email"
+            android:layout_marginEnd="@dimen/dp24"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/colorBlack_87"
+            tools:text="devisevianus7@gmail.com"
+            />
+
+        <ImageView
+            android:id="@+id/iv_icon_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/ic_email"
+            tools:ignore="ContentDescription"
+            />
+
+    </RelativeLayout>
+
+    <!-- Layout Date of Birth -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp1"
+        android:paddingStart="@dimen/dp16"
+        android:paddingEnd="@dimen/dp16"
+        android:paddingTop="@dimen/dp12"
+        android:paddingBottom="@dimen/dp12"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/tv_user_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/iv_icon_birth"
+            android:layout_marginEnd="@dimen/dp24"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/colorBlack_87"
+            tools:text="13 Juli 1996"
+            />
+
+        <ImageView
+            android:id="@+id/iv_icon_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/ic_calendar"
+            tools:ignore="ContentDescription"
+            />
+
+    </RelativeLayout>
+
+    <!-- Layout Phone -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp16"
+        android:paddingStart="@dimen/dp16"
+        android:paddingEnd="@dimen/dp16"
+        android:paddingTop="@dimen/dp12"
+        android:paddingBottom="@dimen/dp12"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/tv_user_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/iv_icon_phone"
+            android:layout_marginEnd="@dimen/dp24"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/colorBlack_87"
+            tools:text="085711785383"
+            />
+
+        <ImageView
+            android:id="@+id/iv_icon_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/ic_contact"
+            tools:ignore="ContentDescription"
+            />
+
+    </RelativeLayout>
+
+    <!-- Layout Logout -->
+    <TextView
+        android:id="@+id/tv_action_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp16"
+        android:paddingEnd="@dimen/dp16"
+        android:paddingTop="@dimen/dp12"
+        android:paddingBottom="@dimen/dp12"
+        android:text="@string/action_logout"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/colorCrimson"
+        android:background="@color/colorWhite"
+        tools:text="Logout"
+        />
+
+</LinearLayout>

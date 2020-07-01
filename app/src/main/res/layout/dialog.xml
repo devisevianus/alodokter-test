@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/dp24"
+    android:paddingEnd="@dimen/dp24"
+    android:paddingTop="@dimen/dp21"
+    android:paddingBottom="@dimen/dp22"
+    android:background="@drawable/rectangle_rounded_white">
+
+    <!-- Dialog Title -->
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_confirm_logout"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp16"
+        tools:text="@string/title_confirm_logout"
+        />
+
+    <!-- Dialog Message -->
+    <TextView
+        android:id="@+id/tv_dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp14"
+        android:text="@string/text_confirm_logout"
+        android:textColor="@color/colorBlack_60"
+        android:fontFamily="@font/roboto_regular"
+        tools:text="@string/text_confirm_logout"
+        />
+
+    <!-- Layout Dialog Button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp24"
+        android:paddingTop="@dimen/dp14">
+
+        <!-- Button Negative -->
+        <TextView
+            android:id="@+id/tv_dialog_negative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/tv_dialog_positive"
+            android:layout_marginEnd="@dimen/dp24"
+            android:text="@string/action_cancel"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            tools:text="@string/action_cancel"
+            />
+
+        <!-- Button Positive -->
+        <TextView
+            android:id="@+id/tv_dialog_positive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/action_logout"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            tools:text="@string/action_logout"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

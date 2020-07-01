@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Cat Gallery</string>
+
+    <!-- Menu -->
+    <string name="action_home">Home</string>
+    <string name="action_profile">Profile</string>
+
+    <!-- Login -->
+    <string name="action_login">Login</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="message_login">Login with your\naccount!</string>
+    <string name="placeholder_app_version">Version %s</string>
+
+    <!-- Home -->
+    <string name="label_list_of_cat">List of cat</string>
+
+    <!-- Profile -->
+    <string name="action_cancel">Cancel</string>
+    <string name="action_logout">Logout</string>
+    <string name="text_confirm_logout">Are you sure want to logout?</string>
+    <string name="title_confirm_logout">Confirm Logout</string>
+
+    <string name="message_exit_app">Please click BACK again to exit</string>
+</resources>
